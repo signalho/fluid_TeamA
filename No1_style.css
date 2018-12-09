@@ -1,0 +1,56 @@
+h1{
+  text-align: center;
+}
+fieldset{
+  padding: 20px; width: 300px; margin-top: 20px; margin-left: 20px; border-top-width: 2px;
+}
+#yonsei{
+  padding-left: 50px;
+}
+#MFDL{
+  padding-left: 125px;
+}
+#yonsei_video{
+  text-align: right;
+}
+#korea_video{
+  text-align: center;
+}
+#shop{
+  text-align: center;
+}
+#contact_message{
+  text-align: center;
+}
+#grid ol{
+  border-right: 1px grey solid;
+  width:110px;
+  margin:0;
+  padding:50px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid #article{
+  padding-left:30px;
+  padding-right:25px;
+}
+#name{
+  margin: 30px;
+  margin-bottom: 150px;
+  width:100px;
+}
+#세연{
+  padding: 60px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 170px;
+}
+#세연2{
+  padding-left: 100px;
+  padding-top:10px;
+  padding-bottom:10px;
+  width: 170px;
+}

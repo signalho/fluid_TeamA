@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>계산기</title>
+<style>
+.calc_layout{
+display:inline-block;
+padding:30px 10px 10px 10px;
+margin:0 auto;
+text-align:center;
+background:#CCC;
+border:1px solid #999;
+border-radius:5px;
+}
+button{
+width:80px;
+height:70px;
+font-size:25px;
+font-weight:bold;
+}
+.calc{color:#F63;font-size:1.2em;font-weight:bold;}
+#result{
+width:297px;
+height:60px;
+margin-bottom:5px;
+padding:10px;
+background:#ffffff;
+border:2px solid #999;
+border-style:inset;
+border-radius:3px;
+font-size:30px;
+font-weight:bold;
+text-align:right;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="calc_layout">
+<div id="result">0</div>
+<hr>
+<div><button onClick="calcFnc(7);">7</button><button onClick="calcFnc(8);">8</button><button onClick="calcFnc(9);">9</button><button onClick="calcFnc('/');">/</button></div>
+<div><button onClick="calcFnc(4);">4</button><button onClick="calcFnc(5);">5</button><button onClick="calcFnc(6);">6</button><button onClick="calcFnc('*');">*</button></div>
+<div><button onClick="calcFnc(1);">1</button><button onClick="calcFnc(2);">2</button><button onClick="calcFnc(3);">3</button><button onClick="calcFnc('-');">-</button></div>
+<div><button onClick="calcFnc(0);">0</button><button onClick="calcFnc('%');">%</button><button onClick="calcFnc('+');">+</button><button class="calc" onClick="calcResult();">=</button></div>
+</div>
+</div>
+<script>
+var result = document.getElementById("result");
+var calcData="";
+function calcFnc(_data){
+if(calcData == "" && _data == 0){return}
+calcData = calcData + _data;
+result.innerText = calcData;
+}
+function calcResult(){
+var a = eval(calcData); //--> string을 자바스크립트 코드로 변환, 즉 수식으로 인식
+result.innerText = a;
+}
+</script>
+</body>
+</html>
