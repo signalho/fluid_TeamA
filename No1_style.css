@@ -2,7 +2,7 @@ h1{
   text-align: center;
 }
 fieldset{
-  padding: 20px; width: 300px; margin-top: 20px; margin-left: 20px; border-top-width: 2px;
+  padding: 20px; width: 500px; margin-top: 20px; margin-left: 20px; border-top-width: 2px;
 }
 #yonsei{
   padding-left: 50px;
@@ -29,6 +29,7 @@ fieldset{
   padding:20px;
 }
 #grid{
+  padding-top: 10px;
   display:grid;
   grid-template-columns: 150px 1fr;
 }
