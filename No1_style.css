@@ -26,7 +26,7 @@ fieldset{
   border-right: 1px grey solid;
   width:110px;
   margin:0;
-  padding:30px;
+  padding:20px;
 }
 #grid{
   display:grid;
