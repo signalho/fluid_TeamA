@@ -24,9 +24,10 @@ fieldset{
 }
 #grid ol{
   border-right: 1px grey solid;
-  width:110px;
+  width:125px;
   margin:0;
   padding:20px;
+  padding-left:15px;
 }
 #grid{
   padding-top: 10px;
@@ -39,7 +40,7 @@ fieldset{
 }
 #name{
   margin: 30px;
-  margin-bottom: 175px;
+  margin-bottom: 0px;
   width:100px;
 }
 #세연{
@@ -54,4 +55,9 @@ fieldset{
   padding-top:5px;
   padding-bottom:5px;
   width: 170px;
+}
+#h6{
+  margin-bottom: 130px;
+  text-align: center;
+
 }
